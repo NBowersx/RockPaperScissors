@@ -1,4 +1,7 @@
-let playerChoice = prompt("please enter rock paper or scissors").toLowerCase()
+let playerScore = 0, computerScore = 0;
+while (playerScore< 5 && computerScore < 5){
+
+    
 let computerChoice = Math.floor(Math.random()*3)
  if(computerChoice === 0){
   computerChoice = "rock";
@@ -9,10 +12,18 @@ let computerChoice = Math.floor(Math.random()*3)
  else if (computerChoice === 2){
    computerChoice = "scissors";
  }
- round(playerChoice,computerChoice);
-console.log("your score "+playerScore +" computers score " +computerScore)
+console.log(computerChoice)
 
-function round(playerChoice,computerChoice)
+//getting the players selection
+let playerChoice = prompt("please enter rock paper or scissors").toLowerCase()
+console.log(playerChoice)
+
+//create the game
+
+round(playerChoice,computerChoice);
+console.log("your score "+playerScore +" computers score " +computerScore)
+}
+function round(playerChoice,computerChoice){
     if (playerChoice =='paper' && computerChoice == "rock" || 
     playerChoice =='rock' && computerChoice == "scissors" || 
     playerChoice =='scissors' && computerChoice == "paper"){
@@ -25,3 +36,7 @@ function round(playerChoice,computerChoice)
     }
 else if (playerChoice == computerChoice){
 }
+}
+if (playerScore == 5 || computerScore ==5){
+        console.log("game is over"); 
+    }
