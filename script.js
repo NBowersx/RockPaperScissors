@@ -18,7 +18,6 @@ console.log(computerChoice)
 let playerChoice = prompt("please enter rock paper or scissors").toLowerCase()
 console.log(playerChoice)
 
-//create the game
 
 round(playerChoice,computerChoice);
 console.log("your score "+playerScore +" computers score " +computerScore)
