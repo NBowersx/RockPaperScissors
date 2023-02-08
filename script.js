@@ -39,3 +39,8 @@ else if (playerChoice == computerChoice){
 if (playerScore == 5 || computerScore ==5){
         console.log("game is over"); 
     }
+
+    /**buttons not typing
+     * listener event that calls round
+     * div for results
+     * console logs into doms
