@@ -1,5 +1,12 @@
 let playerScore = 0, computerScore = 0;
-while (playerScore< 5 && computerScore < 5){
+
+
+
+const button = document.querySelector('.options')
+button.addEventListener("click", myFunction);{
+    if (!(playerChoice))
+}
+
 
     
 let computerChoice = Math.floor(Math.random()*3)
@@ -15,13 +22,12 @@ let computerChoice = Math.floor(Math.random()*3)
 console.log(computerChoice)
 
 //getting the players selection
-let playerChoice = prompt("please enter rock paper or scissors").toLowerCase()
-console.log(playerChoice)
+
 
 
 round(playerChoice,computerChoice);
 console.log("your score "+playerScore +" computers score " +computerScore)
-}
+
 function round(playerChoice,computerChoice){
     if (playerChoice =='paper' && computerChoice == "rock" || 
     playerChoice =='rock' && computerChoice == "scissors" || 
@@ -40,7 +46,3 @@ if (playerScore == 5 || computerScore ==5){
         console.log("game is over"); 
     }
 
-    /**buttons not typing
-     * listener event that calls round
-     * div for results
-     * console logs into doms

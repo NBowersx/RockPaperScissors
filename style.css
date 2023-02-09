@@ -2,15 +2,4 @@ body {
     background-color: darkblue;
     color: rgb(209, 14, 14);
 }
-h1 , h3 {
-    text-align: center;
-}
-.score{
-    background-color: aliceblue;
-}
-.game {
-    background-color: red;
-}
-.options{
-    background-color: orange;
-}
+
