@@ -31,7 +31,9 @@ computerChoice = Math.floor(Math.random()*3)
     computerChoice =='scissors' && playerChoice == "paper"){
     computerScore++
     }
-    console.log("your score "+playerScore +" computers score " +computerScore)
+    
+    score.innerHTML= "PLAYER-"+playerScore +" COMPUTER-" +computerScore
+    result.innerHTML= ` You played ${playerChoice} the computer played ${computerChoice}`;
     if (playerChoice == computerChoice){
     }
     if (playerScore == 5 || computerScore ==5){
