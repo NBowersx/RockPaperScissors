@@ -1,15 +1,14 @@
 let playerScore = 0, computerScore = 0;
+const button = document.querySelectorAll('button')
+button.forEach(button =>{
+button.addEventListener('click', round)
+})
 
 
 
-const button = document.querySelector('.options')
-button.addEventListener("click", myFunction);{
-    if (!(playerChoice))
-}
 
-
-    
-let computerChoice = Math.floor(Math.random()*3)
+function round(e,computerChoice){
+computerChoice = Math.floor(Math.random()*3)
  if(computerChoice === 0){
   computerChoice = "rock";
  }
@@ -19,16 +18,9 @@ let computerChoice = Math.floor(Math.random()*3)
  else if (computerChoice === 2){
    computerChoice = "scissors";
  }
-console.log(computerChoice)
-
-//getting the players selection
-
-
-
-round(playerChoice,computerChoice);
-console.log("your score "+playerScore +" computers score " +computerScore)
-
-function round(playerChoice,computerChoice){
+ console.log(computerChoice)
+    playerChoice= e.target.id
+    console.log(playerChoice)
     if (playerChoice =='paper' && computerChoice == "rock" || 
     playerChoice =='rock' && computerChoice == "scissors" || 
     playerChoice =='scissors' && computerChoice == "paper"){
@@ -39,10 +31,11 @@ function round(playerChoice,computerChoice){
     computerChoice =='scissors' && playerChoice == "paper"){
     computerScore++
     }
-else if (playerChoice == computerChoice){
-}
-}
-if (playerScore == 5 || computerScore ==5){
+    console.log("your score "+playerScore +" computers score " +computerScore)
+    if (playerChoice == computerChoice){
+    }
+    if (playerScore == 5 || computerScore ==5){
+        
         console.log("game is over"); 
     }
-
+}
