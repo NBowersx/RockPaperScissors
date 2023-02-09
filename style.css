@@ -1,5 +1,9 @@
 body { 
     background-color: darkblue;
     color: rgb(209, 14, 14);
+    margin-left: 50%;
+}
+h1{
+    margin-left: -10%;
 }
 
