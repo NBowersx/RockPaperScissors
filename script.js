@@ -25,15 +25,17 @@ computerChoice = Math.floor(Math.random()*3)
     playerChoice =='rock' && computerChoice == "scissors" || 
     playerChoice =='scissors' && computerChoice == "paper"){
         playerScore++
+        winner='Player wins'
     }
     if (computerChoice =='paper' && playerChoice == "rock" || 
     computerChoice =='rock' && playerChoice == "scissors" || 
     computerChoice =='scissors' && playerChoice == "paper"){
     computerScore++
+    winner='Computer wins'
     }
     
     score.innerHTML= "PLAYER-"+playerScore +" COMPUTER-" +computerScore
-    result.innerHTML= ` You played ${playerChoice} the computer played ${computerChoice}`;
+    result.innerHTML= `${winner} You played ${playerChoice} the computer played ${computerChoice}`;
     if (playerChoice == computerChoice){
     }
     if (playerScore == 5 || computerScore ==5){
